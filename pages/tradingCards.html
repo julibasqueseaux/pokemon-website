@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pokemon - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg border-bottom py-3">
+        <div class="container-fluid px-4 w-100 d-flex align-items-center">
+          <a href="../index.html">
+            <img
+              src="../img/logo-pokemon.png"
+              alt="Logo de Pokémon"
+              class="brand-logo"
+            />
+          </a>
+
+          <!-- MENU HAMBURGUESA -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <!-- MENÚ -->
+            <ul class="navbar-nav mx-lg-auto header-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./pokedex.html">Pokédex</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./videoGames.html"
+                  >Video Games & Apps</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trading Card Game</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./animation.html">Animation</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">More</a></li>
+            </ul>
+
+            <!-- LOG IN -->
+            <a class="nav-link header-login ms-lg-auto" href="#">Log in</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="tcg-page">
+      <!-- HERO  -->
+      <section class="tcg-hero">
+        <div class="hero-style">
+          <img
+            src="../img/tcg/tcg-banner1.jpg.png"
+            alt="Pokémon Trading Card Game hero banner"
+          />
+        </div>
+
+        <div class="hero-controls">
+          <button class="hero-arrow" type="button">‹</button>
+
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+          <button class="hero-arrow" type="button">›</button>
+        </div>
+      </section>
+
+      <!-- CARDS OF THE DAY -->
+      <section class="tcg-day">
+        <div class="container-max">
+          <h2 id="cards-day-title" class="tcg-title">Cards of the day</h2>
+
+          <article class="tcg-feature">
+            <!-- cartas -->
+            <div class="tcg-cards">
+              <img
+                class="tcg-card tcg-card-main"
+                src="../img/tcg/jolteon-tcg.png"
+                alt="Jolteon card"
+              />
+            </div>
+
+            <!-- texto abajo -->
+            <div class="tcg-caption">
+              <button class="tcg-arrow left" type="button">‹</button>
+
+              <div class="tcg-info">
+                <h3 class="tcg-name">Jolteon</h3>
+                <p class="tcg-sub">Set: Prismatic Evolutions</p>
+              </div>
+
+              <button
+                class="tcg-arrow right"
+                type="button"
+              >
+                ›
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <h4 class="footer-title">The Pokemon Company</h4>
+          <p class="footer-copy">
+            © Pokémon. © Nintendo/Creatures Inc./GAME FREAK inc.
+          </p>
+        </div>
+
+        <nav class="footer-links">
+          <a href="#">What is Pokémon?</a>
+          <a href="#">Terms of use</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Sitemap</a>
+        </nav>
+
+        <span class="footer-locale">
+          <i class="bi bi-geo-alt-fill"></i> United States
+        </span>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

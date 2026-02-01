@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pokemon - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg border-bottom py-3">
+        <!-- LOGO -->
+        <div class="container px-4 w-100 d-flex align-items-center">
+          <a href="./index.html">
+            <img
+              src="img/logo-pokemon.png"
+              alt="Logo de Pokémon"
+              class="brand-logo"
+            />
+          </a>
+
+          <!-- MENU HAMBURGUESA -->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <!-- MENÚ -->
+            <ul class="navbar-nav mx-lg-auto header-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/pokedex.html">Pokédex</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/videoGames.html"
+                  >Video Games & Apps</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/tradingCards.html"
+                  >Trading Card Game</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/animation.html">Animation</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">More</a></li>
+            </ul>
+            <!-- LOG IN -->
+            <a class="nav-link header-login ms-lg-auto" href="#">Log in</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- CARRUSEL -->
+      <section class="hero">
+        <div class="hero-style">
+          <img src="img/home-image.png" alt="Pokemon GO Tour banner" />
+        </div>
+
+        <!-- CONTROL-->
+        <div class="hero-controls">
+          <button class="hero-arrow" type="button">‹</button>
+          <div class="hero-dots">
+            <span class="dot"></span>
+            <span class="dot active"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="hero-arrow" type="button">›</button>
+        </div>
+      </section>
+
+      <!-- NOTICIAS -->
+      <section class="noticias">
+        <div class="container">
+          <header class="noticias-espacio">
+            <h2 class="noticias-titulo">News</h2>
+          </header>
+
+          <!-- CARDS -->
+          <div class="row g-4">
+            <article class="col-12 col-sm-6 col-lg-2">
+              <div class="news-card h-100">
+                <img src="img/news-1.png" alt="News cover 1" class="news-img" />
+                <div class="news-body">
+                  <p class="news-date">January 24, 2025</p>
+                  <p class="news-category">Video Games & Apps</p>
+                  <h3 class="news-title">
+                    Evolve Eevee in Pokémon GO at Local Retailers
+                  </h3>
+                  <p class="news-text">
+                    Trainers, get ready to celebrate the release of the Pokémon
+                    TCG: Scarlet & Violet - Prismatic Evolutions expansion with
+                    Lure Modules at designated PokéStops
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-2">
+              <div class="news-card h-100">
+                <img src="img/news-2.png" alt="News cover 2" class="news-img" />
+                <div class="news-body">
+                  <p class="news-date">January 24, 2025</p>
+                  <p class="news-category">General</p>
+                  <h3 class="news-title">
+                    Catch Wild Pokémon in the Monopoly: Pokémon Edition Board
+                    Game
+                  </h3>
+                  <p class="news-text">
+                    Play the new Monopoly and become a Pokémon trainer in this
+                    fun board game.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-2">
+              <div class="news-card h-100">
+                <img src="img/news-3.png" alt="News cover 3" class="news-img" />
+                <div class="news-body">
+                  <p class="news-date">January 24, 2025</p>
+                  <p class="news-category">Video Games & Apps</p>
+                  <h3 class="news-title">
+                    Catch Scream Tail and Iron Bundle in 5-Star Tera Raid
+                    Battles
+                  </h3>
+                  <p class="news-text">
+                    Take on these Paradox Pokémon to help complete your Pokémon
+                    Scarlet or Pokémon Violet Pokédex.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-2">
+              <div class="news-card h-100">
+                <img src="img/news-4.png" alt="News cover 4" class="news-img" />
+                <div class="news-body">
+                  <p class="news-date">January 23, 2025</p>
+                  <p class="news-category">Video Games & Apps</p>
+                  <h3 class="news-title">
+                    Prepare to Take on the 2025 Global Challenge I Online
+                    Competition
+                  </h3>
+                  <p class="news-text">
+                    Take on other Pokémon Scarlet and Pokémon Violet players and
+                    earn rewards, including Championship Points.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-2">
+              <div class="news-card h-100">
+                <img src="img/news-5.png" alt="News cover 5" class="news-img" />
+                <div class="news-body">
+                  <p class="news-date">January 22, 2025</p>
+                  <p class="news-category">Video Games & Apps</p>
+                  <h3 class="news-title">
+                    Ralts Brings the Feels to Pokémon GO January 2025 Community
+                    Day Classic
+                  </h3>
+                  <p class="news-text">
+                    Event bonuses, a featured attack, and research opportunities
+                    will keep you from feeling blue!
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-12 col-sm-6 col-lg-2">
+              <div class="news-card h-100">
+                <img src="img/news-6.png" alt="News cover 6" class="news-img" />
+                <div class="news-body">
+                  <p class="news-date">January 22, 2025</p>
+                  <p class="news-category">Video Games & Apps</p>
+                  <h3 class="news-title">
+                    Pokémon TCG Pocket: Pidgeot-ex Deck List Strategy
+                  </h3>
+                  <p class="news-text">
+                    Find the new Pidgeot-ex Card and beat them all playing
+                    Pokémon Trading Card Game
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- BOTON -->
+          <div class="news-cta text-end">
+            <a class="btn btn-outline-primary btn-sm" href="#" role="button"
+              >View more news</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <h4 class="footer-title">The Pokemon Company</h4>
+          <p class="footer-copy">
+            © Pokémon. © Nintendo/Creatures Inc./GAME FREAK inc.
+          </p>
+        </div>
+
+        <nav class="footer-links">
+          <a href="#">What is Pokémon?</a>
+          <a href="#">Terms of use</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Sitemap</a>
+        </nav>
+
+        <span class="footer-locale">
+          <i class="bi bi-geo-alt-fill"></i> United States
+        </span>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
