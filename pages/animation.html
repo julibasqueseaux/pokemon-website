@@ -1,100 +1,169 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pokemon - Home</title>
+    <title>Pokemon - Animation</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
+    <!-- HEADER -->
     <header class="site-header">
       <nav class="navbar navbar-expand-lg border-bottom py-3">
-        <div class="container-fluid px-4 w-100 d-flex align-items-center">
+        <div class="container px-4 w-100 d-flex align-items-center">
           <a href="../index.html">
-            <img src="../img/logo-pokemon.png" alt="Logo de Pokémon" class="brand-logo" />
+            <img src="../img/logo-pokemon.png" class="brand-logo" alt="logo" />
           </a>
 
-          <!-- MENU HAMBURGUESA -->
           <button
             class="navbar-toggler ms-auto"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#mainNav"
-            aria-controls="mainNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="mainNav">
-            <!-- MENÚ -->
             <ul class="navbar-nav mx-lg-auto header-nav">
               <li class="nav-item">
-                <a class="nav-link" href="./pokedex.html">Pokédex</a>
+                <a class="nav-link" href="../index.html">Home</a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Pokédex</a>
+              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="./videoGames.html"
                   >Video Games & Apps</a
                 >
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="./tradingCards.html"
                   >Trading Card Game</a
                 >
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#">Animation</a>
+                <a class="nav-link" href="./animation.html">Animation</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">More</a></li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">More</a>
+              </li>
             </ul>
 
-            <!-- LOG IN -->
             <a class="nav-link header-login ms-lg-auto" href="#">Log in</a>
           </div>
         </div>
       </nav>
     </header>
-
-
-   <main>
-  <section class="animation-section container">
-    <header class="animation-header">
-      <h1>Animation</h1>
-      <button class="sort-btn">↕ Sort by</button>
-    </header>
-
-    <article class="animation-card">
-      <figure class="animation-image">
-        <img src="../img/animation/ani-season1.png" alt="Pokémon Indigo League poster">
-      </figure>
-
-      <div class="animation-body">
-        <div class="animation-meta">
-          <span class="season">Season 1</span>
-          <span class="release-date">Release date: April 01, 1997</span>
+    <!-- MAIN -->
+    <main class="animation-page">
+      <section class="animation-wrap container">
+        <div class="animation-top">
+          <h1 class="animation-title">Animation</h1>
+          <div class="animation-sort">
+            <i class="bi bi-arrow-down-up"></i>
+            <span>Sort by</span>
+          </div>
         </div>
 
-        <h2 class="animation-title">Pokémon: Indigo League</h2>
+        <div class="animation-grid">
+          <!-- CARD 1 -->
+          <article class="ani-card">
+            <img
+              src="../img/animation/Season1.png"
+              alt="Season 1"
+              class="ani-img"
+            />
 
-        <p class="animation-text">
-          Ash Ketchum begins his journey to become a Pokémon Trainer with an
-          unexpected partner, Pikachu. Alongside friends Brock and Misty,
-          he faces tough Gym Battles and befriends Pokémon like Bulbasaur,
-          Squirtle, and Charmander.
-        </p>
-      </div>
-    </article>
-  </section>
-</main>
+            <div class="ani-meta">
+              <span class="ani-season">Season 1</span>
+              <span class="ani-date">Release date: April 01, 1997</span>
+            </div>
 
-      <!-- FOOTER -->
+            <h3 class="ani-name">Pokémon: Indigo League</h3>
+
+            <p class="ani-desc">
+              Ash Ketchum begins his journey to become a Pokémon Trainer with an
+              unexpected partner, Pikachu. Alongside friends Brock and Misty, he
+              faces tough Gym Battles and befriends Pokémon like Bulbasaur,
+              Squirtle, and Charmander on his quest to be a Pokémon Master.
+            </p>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="ani-card">
+            <img
+              src="../img/animation/Season2.png"
+              alt="Season 2"
+              class="ani-img"
+            />
+
+            <div class="ani-meta">
+              <span class="ani-season">Season 2</span>
+              <span class="ani-date">Release date: January 28, 1999</span>
+            </div>
+
+            <h3 class="ani-name">Pokemon: Adventures in the Orange Islands</h3>
+
+            <p class="ani-desc">
+              Ash competes in the Indigo League, where his friendship with
+              Richie may affect his chances. After finishing his Kanto journey,
+              he travels to the Orange Islands, where Brock stays with Professor
+              Ivy. Now joined by Misty and Pokémon watcher Tracey Sketchit.
+            </p>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="ani-card">
+            <img
+              src="../img/animation/Season3.png"
+              alt="Season 3"
+              class="ani-img"
+            />
+
+            <div class="ani-meta">
+              <span class="ani-season">Season 3</span>
+              <span class="ani-date">Release date: October 14, 1999</span>
+            </div>
+
+            <h3 class="ani-name">Pokemon: The Johto Journeys</h3>
+
+            <p class="ani-desc">
+              Ash faces the Orange Crew and their leader, Drake, before
+              returning to Pallet Town, where he reunites with Brock. Together,
+              they head to the Johto region, where Ash begins challenging Gym
+              Leaders, catching new Pokémon like Totodile and Chikorita.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-left">
@@ -119,7 +188,7 @@
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      integrity="sha384-HoA1ZbCkIY7Jz2xQw7KQpKQv0b9l0GxE5j5w5m5m5m5m5m5m5m5m5m5m5m5"
       crossorigin="anonymous"
     ></script>
   </body>

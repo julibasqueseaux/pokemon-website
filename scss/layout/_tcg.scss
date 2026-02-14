@@ -1,0 +1,168 @@
+/* HERO BANNER (FULL WIDTH) */
+.tcg-hero {
+  width: 100%;
+  height: 600px;
+  background: url("../img/tcg/tcg-banner.png") center/cover no-repeat;
+}
+
+/* CARDS OF THE DAY */
+.tcg-day {
+  position: relative;
+  padding: 80px 0 110px;
+  margin-bottom: 140px;
+  text-align: center;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(255, 255, 255, 0.08),
+      transparent 55%
+    ),
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
+    url("../img/tcg/pattern.jpg") center/cover no-repeat;
+}
+
+.tcg-day::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: #fff;
+  clip-path: polygon(
+    0 55%,
+    12% 65%,
+    28% 78%,
+    50% 85%,
+    72% 78%,
+    88% 65%,
+    100% 55%,
+    100% 100%,
+    0 100%
+  );
+  pointer-events: none;
+}
+
+/* TITLE */
+.tcg-title {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 46px;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+/* CARD  */
+.tcg-showcase {
+  position: relative;
+  z-index: 2;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.main-card {
+  width: 250px;
+  position: relative;
+  z-index: 3;
+  filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.7));
+}
+
+.side-card {
+  width: 170px;
+  position: absolute;
+  top: 30px;
+  opacity: 0.85;
+  filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.6));
+}
+
+.side-card.left {
+  left: 32%;
+  transform: rotate(-15deg);
+}
+
+.side-card.right {
+  right: 32%;
+  transform: rotate(15deg);
+}
+
+/* CAPTION BOX */
+.tcg-caption {
+  position: relative;
+  z-index: 2;
+  background: #111;
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+  padding: 24px 70px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.tcg-caption h3 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.tcg-caption p {
+  margin: 0;
+  opacity: 0.7;
+}
+
+.tcg-arrow {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 26px;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.tcg-arrow:hover {
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .tcg-hero {
+    height: 260px;
+    background-position: 45% center;
+  }
+
+  .tcg-title {
+    font-size: 32px;
+  }
+
+  .tcg-showcase {
+    height: 260px;
+  }
+
+  .side-card {
+    display: none;
+  }
+
+  .main-card {
+    width: 200px;
+  }
+
+  .tcg-caption {
+    padding: 20px 30px;
+    gap: 20px;
+  }
+
+  .tcg-day {
+    padding: 70px 0 90px;
+    margin-bottom: 120px;
+  }
+
+  .tcg-day::after {
+    height: 70px;
+  }
+}

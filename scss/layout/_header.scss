@@ -1,0 +1,32 @@
+@use "../base/mixins" as *;
+@use "../base/variables" as *;
+
+.site-header {
+  .brand-logo {
+    max-height: 70px;
+  }
+
+  .header-nav {
+    gap: 18px;
+
+    .nav-link {
+      color: $black;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .header-login {
+    font-weight: 500;
+    color: $black;
+  }
+
+  @include tablet {
+    .header-nav {
+      gap: 10px;
+    }
+  }
+}

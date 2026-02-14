@@ -1,0 +1,50 @@
+@use "../base/mixins" as *;
+@use "../base/variables" as *;
+
+.site-footer {
+  background: #101010;
+  color: $white;
+  padding: 28px 0;
+
+  .footer-inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .footer-title {
+    margin: 0 0 6px;
+    font-weight: 800;
+  }
+
+  .footer-copy {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.85;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      font-size: 12px;
+      opacity: 0.85;
+
+      &:hover {
+        opacity: 1;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-locale {
+    font-size: 14px;
+    opacity: 0.9;
+  }
+}

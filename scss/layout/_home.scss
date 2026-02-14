@@ -1,0 +1,143 @@
+@use "../base/mixins" as *;
+@use "../base/variables" as *;
+
+.hero {
+  background: $gray-200;
+
+  .hero-style {
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .hero-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 12px 0;
+
+    .hero-arrow {
+      border: 0;
+      background: transparent;
+      font-size: 28px;
+      color: $gray-700;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .hero-dots {
+      display: flex;
+      gap: 10px;
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: #d6d6d6;
+
+        &.active {
+          background: #7a7a7a;
+        }
+      }
+    }
+  }
+}
+
+.noticias {
+  padding: 28px 0 34px;
+
+  .noticias-titulo {
+    font-size: 42px;
+    font-weight: 800;
+    margin: 0 0 18px;
+  }
+
+  .news-card {
+    background: $white;
+    border: 1px solid $gray-300;
+    border-radius: $radius;
+    overflow: hidden;
+
+    .news-img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .news-body {
+      padding: 12px;
+
+      .news-date {
+        margin: 0;
+        font-size: 12px;
+        color: #ff3c00;
+        font-weight: 700;
+      }
+
+      .news-category {
+        margin: 0 0 6px;
+        font-size: 12px;
+        color: #666;
+      }
+
+      .news-title {
+        font-size: 14px;
+        font-weight: 800;
+        margin: 0 0 8px;
+      }
+
+      .news-text {
+        font-size: 12px;
+        color: #333;
+        margin: 0;
+      }
+    }
+  }
+
+  .news-cta {
+    margin-top: 18px;
+  }
+
+  @include mobile {
+    .noticias-titulo {
+      font-size: 34px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .news-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-card .news-img {
+    width: 85%;
+    margin-top: 12px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .noticias .row {
+    justify-content: center;
+  }
+
+  .news-card {
+    max-width: 320px;
+    margin: auto;
+  }
+
+  @media (max-width: 576px) {
+    .noticias-espacio {
+      text-align: center;
+    }
+
+    .noticias-titulo {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
