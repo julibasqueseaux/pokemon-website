@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Trading Card Game</title>
+    <title>Pokémon Trading Card Game | Cards of the Day</title>
+    <meta
+      name="description"
+      content="Explore the Pokémon Trading Card Game page and discover featured cards of the day from the Prismatic Evolutions set."
+    />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -21,12 +25,15 @@
   </head>
 
   <body>
-    <!-- HEADER -->
     <header class="site-header">
       <nav class="navbar navbar-expand-lg border-bottom py-3">
         <div class="container px-4 w-100 d-flex align-items-center">
           <a href="../index.html">
-            <img src="../img/logo-pokemon.png" class="brand-logo" alt="logo" />
+            <img
+              src="../img/logo-pokemon.png"
+              class="brand-logo"
+              alt="Pokémon official logo"
+            />
           </a>
 
           <button
@@ -34,6 +41,9 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -45,7 +55,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" href="#">Pokédex</a>
+                <a class="nav-link" href="./pokedex.html">Pokédex</a>
               </li>
 
               <li class="nav-item">
@@ -55,7 +65,10 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="./tradingCards.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./tradingCards.html"
                   >Trading Card Game</a
                 >
               </li>
@@ -74,35 +87,44 @@
         </div>
       </nav>
     </header>
-    <!-- MAIN -->
+
     <main class="tcg-page">
-      <!-- HERO -->
       <section class="tcg-hero"></section>
 
-      <!-- CARDS OF DAY -->
       <section class="tcg-day">
-        <h2 class="tcg-title">Cards of the day</h2>
+        <h1 class="tcg-title">Cards of the day</h1>
 
         <div class="tcg-showcase">
-          <img class="side-card left" src="../img/tcg/espeon.png" />
-          <img class="main-card" src="../img/tcg/jolteon.png" />
-          <img class="side-card right" src="../img/tcg/leafeon.png" />
+          <img
+            class="side-card left"
+            src="../img/tcg/espeon.png"
+            alt="Espeon Pokémon trading card from the Prismatic Evolutions set"
+          />
+          <img
+            class="main-card"
+            src="../img/tcg/jolteon.png"
+            alt="Jolteon Pokémon trading card featured as card of the day from the Prismatic Evolutions set"
+          />
+          <img
+            class="side-card right"
+            src="../img/tcg/leafeon.png"
+            alt="Leafeon Pokémon trading card from the Prismatic Evolutions set"
+          />
         </div>
 
         <div class="tcg-caption">
-          <button class="tcg-arrow">‹</button>
+          <button class="tcg-arrow" aria-label="Previous card">‹</button>
 
           <div>
-            <h3>Jolteon</h3>
+            <h2>Jolteon</h2>
             <p>Set: Prismatic Evolutions</p>
           </div>
 
-          <button class="tcg-arrow">›</button>
+          <button class="tcg-arrow" aria-label="Next card">›</button>
         </div>
       </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-left">
@@ -125,10 +147,6 @@
       </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-1qkD0J3oX9y7aGbnZtqS2G8m8t2nKj9R+qWqJpQw9l7Q3r+q6k6nY+9u8G6HhCwG"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
